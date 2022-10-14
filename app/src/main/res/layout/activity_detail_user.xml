@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailUserActivity"
+    android:orientation="vertical"
+    android:paddingHorizontal="30dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DETAIL DATA DIRI"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="6dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/box_blue1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="8dp"
+        android:text="Tanggal Lahir"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textSize="16sp"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/box_color"
+        android:layout_marginBottom="15dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="22sp"
+            android:src="@drawable/ic_calendar"
+            android:layout_margin="10dp" />
+
+        <EditText
+            android:id="@+id/tglLahir_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="1-1-2001"
+            android:fontFamily="@font/montserrat_medium"
+            android:layout_marginVertical="10dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Kategori"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textSize="16sp"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/box_color"
+        android:layout_marginBottom="15dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="22sp"
+            android:src="@drawable/ic_category"
+            android:layout_margin="10dp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/simpan_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:text="Simpan"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:textAllCaps="false" />
+</LinearLayout>
